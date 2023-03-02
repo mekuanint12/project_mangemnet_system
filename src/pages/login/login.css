@@ -1,0 +1,40 @@
+.login_container{
+    padding: 10px;
+    width: 100%;
+    padding: 20px;
+}
+.nav_bar{
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.auth-div{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+.auth-div a,
+.logo a{
+    text-decoration: none;    
+}
+.logo a{
+    font-size: 20px;
+    margin-top: -20px;
+    color: rgb(14, 18, 44);
+    margin-top: 19px !important;
+}
+.auth-form{
+    width: 40%;
+    margin: 5% auto;
+}
+form{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.25);
+    border: 1px solid rgb(190, 183, 183);
+}  
+
+

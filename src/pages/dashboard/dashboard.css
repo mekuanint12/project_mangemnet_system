@@ -1,0 +1,112 @@
+.project_containers{
+    display: grid;
+    grid-template-columns: 0.8fr 3fr 200px;
+    width: 100%;
+}
+.side_nav{
+    display: flex;
+    padding-top: 51px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    height: 100vh;
+    border-right: 2px solid rgb(225, 214, 214);
+    background-color: rgb(247, 247, 247);
+    /* justify-content: center; */
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -50px;
+    justify-content: flex-start;
+    background-color: #fff;
+}
+.link_btn:hover{
+    color: blue !important;
+}
+.team_nav h5{
+    /* text-align: center; */
+    font-size: 15px;
+    font-weight: 600;
+    color: blueviolet;
+}
+.team_nav{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-left: 2px solid rgb(225, 214, 214);
+    background-color: rgb(247, 247, 247);
+}
+.img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+.img div:hover{
+    color: blueviolet;
+    transition: 0.5s;
+}
+.project_nav{
+    padding: 0 20px;
+}
+.project_nav h2{
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: rgb(18, 25, 83);
+    margin-bottom: 0px;
+}
+.filters{
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgb(225, 217, 217);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    transition: 0.4s;
+
+}
+.filters span:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+.projects{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.pro_card{
+    width: 29%;
+    color:#eae9e9;
+    background-color: rgb(49, 189, 189);
+    box-shadow: 10px 16px 20px rgba(0,0,0,0.3);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.pro__title{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+.pro__date{
+    font-size: 13px;
+    color: grey;
+    border-bottom: 1px solid rgb(219, 216, 216);
+    margin-bottom: 20px;
+}
+.progress{
+    padding: 10px 0;
+}
+.teams{
+    margin-left: 10px;
+}
+.teams img{
+    /* padding: 10px; */
+    margin-left: -10px;
+}
