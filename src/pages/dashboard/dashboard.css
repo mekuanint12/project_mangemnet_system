@@ -1,6 +1,6 @@
 .project_containers{
     display: grid;
-    grid-template-columns: 0.8fr 3fr 200px;
+    grid-template-columns: 200px 2.5fr 190px;
     width: 100%;
 }
 .side_nav{
@@ -46,6 +46,9 @@
     padding: 5px 0;
     transition: 0.3s;
 }
+.nav_bar{
+    border-bottom: 1px solid rgb(231, 228, 228) !important;
+}
 .img div:hover{
     color: blueviolet;
     transition: 0.5s;
@@ -89,6 +92,9 @@
     padding: 10px;
     border-radius: 7px;
 }
+.completed{
+    background-color: rgb(238, 211, 1) !important;
+}
 .pro__title{
     cursor: pointer;
     font-size: 18px;
@@ -96,17 +102,94 @@
 }
 .pro__date{
     font-size: 13px;
-    color: grey;
+    padding: 7px 0;
+    color: rgb(228, 59, 59);
     border-bottom: 1px solid rgb(219, 216, 216);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+.completed .progress{
+    font-weight: 600;
+}
+.completed .pro__date{
+    color: green;
 }
 .progress{
     padding: 10px 0;
 }
 .teams{
+    display: flex;
+    justify-content: space-between;
     margin-left: 10px;
 }
 .teams img{
     /* padding: 10px; */
     margin-left: -10px;
+}
+.notify_me{
+    position: relative;
+}
+.notify_num{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    padding: 7px;
+    width: 5px;
+    height: 5px;
+    color: white;
+    font-weight: 700;
+    border-radius: 50%;
+}
+.auth-div{
+    position: relative;
+}
+.notifications{
+    position: absolute;
+    width: 300px;
+    top: 40px;
+    right: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    display: none;
+}
+.notify_new{
+    background-color: rgb(225, 216, 216);
+    padding: 5px;
+    border-radius: 5px;
+}
+.notify_old{
+    padding: 5px;
+}
+.display_me{
+    display: block !important;
+}
+.read,
+.unread{
+    font-size: 13px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.read{
+    color: rgb(49, 48, 48);
+}
+.unread{
+    color: rgb(38, 66, 29);
+}
+.new{
+    color: green !important;
+}
+.new,
+.old{
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+    margin-bottom: 10px;
 }

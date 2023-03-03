@@ -12,6 +12,7 @@ const Login = () => {
     e.preventDefault();
     setPending(true);
     setError("error happned!")
+    setPending(false);
   }
   return (
 
