@@ -12,10 +12,6 @@ const projectSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
-  startDate: {
-    type: Date,
-    required: true
-  },
   endDate: {
     type: Date,
     required: true
@@ -29,29 +25,16 @@ const projectSchema = new mongoose.Schema({
       type: String,
       required: true,
       trim: true
-    },
-    assignedTo: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'User'
-    },
-    status: {
-      type: String,
-      enum: ['in progress', 'completed', 'cancelled'],
-      default: 'in progress'
-    },
-    createdAt: {
-      type: Date,
-      default: Date.now
-    },
-    updatedAt: {
-      type: Date,
-      default: Date.now
     }
   }],
   status: {
     type: String,
     enum: ['in progress', 'completed', 'cancelled'],
     default: 'in progress'
+  },
+  category: {
+    type: String,
+    required: true
   },
   createdAt: {
     type: Date,

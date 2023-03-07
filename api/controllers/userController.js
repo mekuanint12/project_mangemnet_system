@@ -28,7 +28,7 @@ exports.registerUser = async (req, res) => {
       { expiresIn: process.env.JWT_EXPIRES_IN }
     );
 
-    res.cookie('accessToken', accessToken, { httpOnly: true });
+    res.cookie('accessToken', accessToken, { httpOnly: true, sameSite: 'lax'  });
 
     res.status(201).json({ message: 'Registration successful' });
   } catch (err) {

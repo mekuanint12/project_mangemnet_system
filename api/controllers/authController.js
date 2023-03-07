@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
-// Login a user
+// Login user
 exports.loginUser = async (req, res) => {
   try {
     const user = await User.findOne({ email: req.body.email });
@@ -21,7 +21,7 @@ exports.loginUser = async (req, res) => {
       { expiresIn: process.env.JWT_EXPIRES_IN }
     );
 
-    res.cookie('accessToken', accessToken, { httpOnly: false });
+    res.cookie('accessToken', accessToken, { httpOnly: true, sameSite: 'lax'  });
 
     res.status(200).json({ 
       message: 'Login successful',

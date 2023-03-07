@@ -5,10 +5,10 @@ const authController = require('../controllers/authController');
 
 
 router.post('/login', authController.loginUser);
-router.get('/logout', authController.logoutUser);
 router.post('/signup', userController.registerUser);
 
-router.get('/',  userController.getAllUsers);
+router.get('/logout', authController.logoutUser);
+router.get('/',  userController.getAllUsers); 
 router.get('/:id',  userController.getUserById);
 router.put('/:id',  userController.updateUserById);
 router.delete('/:id', authController.protect, userController.deleteUserById);
