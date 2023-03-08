@@ -1,7 +1,7 @@
 .project_containers{
     display: grid;
-    grid-template-columns: 200px 2.5fr 190px;
-    width: 100%;
+    grid-template-columns: 200px 5fr 100px;
+    width: 110%;
 }
 .side_nav{
     display: flex;
@@ -9,10 +9,10 @@
     flex-direction: column;
     align-items: center;
     gap: 80px;
+    width: 15%;
     height: 100vh;
     border-right: 2px solid rgb(225, 214, 214);
     background-color: rgb(247, 247, 247);
-    /* justify-content: center; */
 }
 .links{
     display: flex;
@@ -55,6 +55,7 @@
 }
 .project_nav{
     padding: 0 20px;
+    width: 75%;
 }
 .project_nav h2{
     padding: 20px;

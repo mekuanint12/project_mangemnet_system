@@ -21,11 +21,9 @@ const projectSchema = new mongoose.Schema({
     ref: 'User'
   }],
   tasks: [{
-    name: {
       type: String,
       required: true,
       trim: true
-    }
   }],
   status: {
     type: String,

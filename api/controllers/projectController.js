@@ -1,16 +1,19 @@
 const Project = require('../models/Project');
 const User = require('../models/User');
+const mongoose = require('mongoose');
+
 
 exports.createProject = async (req, res) => {
   try {
+    const members = req.body.members.map(member => mongoose.Types.ObjectId(member.id));
     const project = new Project({
       name: req.body.name,
       description: req.body.description,
-      startDate: req.body.startDate,
       endDate: req.body.endDate,
-      members: req.body.members,
+      members: members,
       tasks: req.body.tasks,
-      status: req.body.status
+      status: req.body.status,
+      category: req.body.category
     });
 
     await project.save();
@@ -28,6 +31,7 @@ exports.createProject = async (req, res) => {
     });
   }
 };
+
 
 
 exports.getAllProjects = async (req, res) => {

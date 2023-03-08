@@ -1,0 +1,14 @@
+.project_containers{
+    display: flex;
+}
+.project-details p{
+    padding: 10px;
+}
+ul.members{
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+}
+ul{
+    padding: 0 10px;
+}
